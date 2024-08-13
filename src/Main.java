@@ -45,13 +45,9 @@ public class Main {
     public static void main(String[] args) {
         boolean continuar = true;
         do try
-        {
-            getExercicio()
-                .executar();
-        }
-        catch (CancelarException _) {
-            continuar = false;
-        }
+            { getExercicio().executar(); }
+        catch (CancelarException _)
+            { continuar = false; }
         while(continuar);
     }
 }
